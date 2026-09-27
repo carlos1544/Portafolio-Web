@@ -49,4 +49,38 @@ filterBar.addEventListener('click', (event) => {
   });
 });
 
+const contactForm = document.getElementById('contactForm');
+const formFeedback = document.getElementById('formFeedback');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const name = contactForm.name.value.trim();
+  const email = contactForm.email.value.trim();
+  const message = contactForm.message.value.trim();
+
+  if (!name || !email || !message) {
+    formFeedback.textContent = 'Por favor completa todos los campos.';
+    formFeedback.className = 'form-feedback is-error';
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    formFeedback.textContent = 'Ingresa un correo válido.';
+    formFeedback.className = 'form-feedback is-error';
+    return;
+  }
+
+  formFeedback.textContent = '¡Mensaje listo para enviar! (conecta esto a un servicio real cuando lo necesites)';
+  formFeedback.className = 'form-feedback is-success';
+  contactForm.reset();
+});
+
+const backToTop = document.getElementById('backToTop');
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 document.getElementById('year').textContent = new Date().getFullYear();
