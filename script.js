@@ -31,4 +31,22 @@ themeToggle.addEventListener('click', () => {
   applyTheme(current);
 });
 
+const filterBar = document.getElementById('filterBar');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBar.addEventListener('click', (event) => {
+  const button = event.target.closest('.filter-btn');
+  if (!button) return;
+
+  filterBar.querySelectorAll('.filter-btn').forEach((btn) => btn.classList.remove('is-active'));
+  button.classList.add('is-active');
+
+  const filter = button.dataset.filter;
+
+  projectCards.forEach((card) => {
+    const matches = filter === 'all' || card.dataset.tech === filter;
+    card.classList.toggle('is-hidden', !matches);
+  });
+});
+
 document.getElementById('year').textContent = new Date().getFullYear();

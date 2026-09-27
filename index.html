@@ -55,6 +55,9 @@
           <p class="hero-lead">
             Diseño y desarrollo de sistemas y aplicaciones web.
           </p>
+          <div class="hero-icon-inner">
+            <img src="img/codigo-fondo.jpg" alt="" />
+          </div>
           <div class="hero-actions">
             <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
             <a href="#contacto" class="btn btn-secondary">Contactarme</a>
@@ -62,39 +65,211 @@
         </div>
       </div>
 
-      <!-- Secciones en construcción: se completan en la siguiente etapa -->
       <section id="sobre-mi" class="section">
         <div class="container">
           <h2><span class="section-number">01.</span>Sobre mí</h2>
-          <p class="text-muted">Contenido en construcción.</p>
+          <div class="about-grid">
+            <article class="about-text">
+              <p>
+                Soy estudiante de octavo semestre de Ingeniería en Software. Me apasiona diseñar dashboards
+                y paneles que hacen visible lo invisible: tomar datos complejos y
+                convertirlos en algo simple de leer, entender y usar para tomar mejores
+                decisiones.
+              </p>
+            </article>
+
+            <aside class="about-facts">
+              <h3>Formación</h3>
+              <ul>
+                <li>Ingeniería en software — 8mo semestre</li>
+              </ul>
+            </aside>
+          </div>
         </div>
       </section>
 
+      <!-- SKILLS -->
       <section id="skills" class="section section-alt">
         <div class="container">
           <h2><span class="section-number">02.</span>Skills</h2>
-          <p class="text-muted">Contenido en construcción.</p>
+
+          <div class="skills-categories">
+            <div class="skill-group">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li class="badge">HTML5</li>
+                <li class="badge">CSS3</li>
+                <li class="badge">JavaScript</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3>Otras herramientas</h3>
+              <ul class="skill-list">
+                <li class="badge">Python</li>
+                <li class="badge">Git &amp; GitHub</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- PROYECTOS -->
       <section id="proyectos" class="section">
         <div class="container">
           <h2><span class="section-number">03.</span>Proyectos destacados</h2>
-          <p class="text-muted">Contenido en construcción.</p>
+
+          <div class="filter-bar" id="filterBar">
+            <button class="filter-btn is-active" data-filter="all" type="button">Todos</button>
+            <button class="filter-btn" data-filter="js" type="button">JavaScript</button>
+            <button class="filter-btn" data-filter="Python" type="button">Python</button>
+            <button class="filter-btn" data-filter="Arduino" type="button">Arduino</button>
+          </div>
+
+          <div class="projects-list" id="projectsGrid">
+
+            <article class="project-row project-card" data-tech="js">
+              <div class="project-row-icon" aria-hidden="true">
+                <img src="img/mercado-virtual.png" alt="" />
+              </div>
+              <div class="project-row-body">
+                <div class="project-row-head">
+                  <h3>Mercado virtual de productos agricolas y mas</h3>
+                  <div class="card-links">
+                    <a href="https://github.com/Ezequiel0117/Pagina_Web_Agronomia.git" target="_blank" rel="noopener">Repositorio</a>
+                  </div>
+                </div>
+                <p>Mercado virtual en el cual puedes adquirir tus productos de una manera rapido</p>
+                <ul class="tech-tags">
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>Css</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-row project-card" data-tech="Python">
+              <div class="project-row-icon" aria-hidden="true">
+                <img src="img/viaje-entre-lineas.png" alt="" />
+              </div>
+              <div class="project-row-body">
+                <div class="project-row-head">
+                  <h3>Biblioteca virtual</h3>
+                  <div class="card-links">
+                    <a href="https://github.com/carlos1544/Viaje-entre-lineas.git" target="_blank" rel="noopener">Repositorio</a>
+                  </div>
+                </div>
+                <p>Se trata de un sistema en donde tienes de una manera facil el poder tener un libro y poder leerlo al tiempo que 
+                  tengas y no en una biblioteca. 
+                </p>
+                <ul class="tech-tags">
+                  <li>Python</li>
+                  <li>Pandas</li>
+                  <li>Html</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-row project-card" data-tech="Arduino">
+              <div class="project-row-icon" aria-hidden="true">
+                <img src="img/Brazo-chatarra.png" alt="" />
+            </div>
+              <div class="project-row-body">
+                <div class="project-row-head">
+                  <h3>Sistema de reciclaje</h3>
+                  <div class="card-links">
+                    <a href="https://drive.google.com/file/d/1CcZN4lG3hbAzyHSC1Le1S3BRqH2H9z26/view?usp=sharing" target="_blank" rel="noopener">Simulación</a>
+                  </div>
+                </div>
+                <p>Se trata de un proyecto que se encuentra en desarrollo en donde
+                  ayuda a automatizar el proceso de chatarrización de objetos pequeños.</p>
+                <ul class="tech-tags">
+                  <li>CODESYS</li>
+                  <li>Arduino IDE</li>
+                  <li>Factory IO</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
         </div>
       </section>
 
+      <!-- DESIGN SYSTEM -->
       <section id="design-system" class="section section-alt">
         <div class="container">
           <h2><span class="section-number">04.</span>Design System / Componentes</h2>
-          <p class="text-muted">Contenido en construcción.</p>
+
+          <h3>Colores</h3>
+          <div class="swatches">
+            <div class="swatch" style="background: var(--color-primary)"><span>--color-primary</span></div>
+            <div class="swatch" style="background: var(--color-secondary)"><span>--color-secondary</span></div>
+            <div class="swatch swatch-light" style="background: var(--color-background)"><span>--color-background</span></div>
+            <div class="swatch swatch-light" style="background: var(--color-surface)"><span>--color-surface</span></div>
+            <div class="swatch" style="background: var(--color-text)"><span>--color-text</span></div>
+          </div>
+
+          <h3>Tipografía</h3>
+          <div class="type-scale">
+            <h1>Encabezado H1</h1>
+            <h2>Encabezado H2</h2>
+            <h3>Encabezado H3</h3>
+            <p>Párrafo de texto normal, usado para el contenido general del sitio.</p>
+            <p class="text-muted">Texto secundario o de apoyo (text-muted).</p>
+            <a href="#">Enlace de ejemplo</a>
+          </div>
+
+          <h3>Espaciado</h3>
+          <div class="spacing-scale">
+            <div class="spacing-sample" style="width: calc(var(--space-sm) * 4)"><span>sm</span></div>
+            <div class="spacing-sample" style="width: calc(var(--space-md) * 4)"><span>md</span></div>
+            <div class="spacing-sample" style="width: calc(var(--space-lg) * 4)"><span>lg</span></div>
+          </div>
+
+          <h3>Componentes</h3>
+          <div class="component-showcase">
+            <button class="btn btn-primary" type="button">Botón primario</button>
+            <button class="btn btn-secondary" type="button">Botón secundario</button>
+            <span class="badge">Skill / Badge</span>
+
+            <div class="form-sample">
+              <label for="demoInput">Input de ejemplo</label>
+              <input type="text" id="demoInput" placeholder="Escribe algo...">
+              <label for="demoTextarea">Textarea de ejemplo</label>
+              <textarea id="demoTextarea" rows="3" placeholder="Mensaje..."></textarea>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- CONTACTO (aún sin validación JS) -->
       <section id="contacto" class="section">
-        <div class="container">
-          <h2><span class="section-number">05.</span>Contacto</h2>
-          <p class="text-muted">Contenido en construcción.</p>
+        <div class="container contact-grid">
+          <div>
+            <h2><span class="section-number">05.</span>Contacto</h2>
+            <p>
+              ¿Tienes un proyecto de desarrollo web en mente? Escríbeme.
+            </p>
+            <ul class="contact-list">
+              <li><a href="mailto:ccallen@unemi.edu.ec">ccallen@unemi.edu.ec</a></li>
+              <li><a href="https://github.com/carlos1544" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
         </div>
       </section>
 
