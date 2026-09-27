@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Calle · Portafolio</title>
+  <meta name="description" content="Estudiante de Ingeniería en Software, enfocado en el desarrollo web.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <a href="#inicio" class="logo">CC <span class="logo-wave" aria-hidden="true"></span></a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+
+      <nav class="primary-nav" id="primaryNav">
+        <a href="#sobre-mi"><span class="nav-index">01</span><span class="nav-label">Sobre mí</span></a>
+        <a href="#skills"><span class="nav-index">02</span><span class="nav-label">Skills</span></a>
+        <a href="#proyectos"><span class="nav-index">03</span><span class="nav-label">Proyectos</span></a>
+        <a href="#design-system"><span class="nav-index">04</span><span class="nav-label">Design System</span></a>
+        <a href="#contacto"><span class="nav-index">05</span><span class="nav-label">Contacto</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+          <span aria-hidden="true">◐</span>
+        </button>
+        <ul class="sidebar-social">
+          <li><a href="https://github.com/carlos1544" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <!-- INTRO -->
+      <div class="intro-section" id="inicio">
+        <div class="container">
+          <p class="eyebrow">Desarrollo de Software</p>
+          <h1>Carlos Calle</h1>
+          <p class="hero-lead">
+            Diseño y desarrollo de sistemas y aplicaciones web.
+          </p>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-secondary">Contactarme</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secciones en construcción: se completan en la siguiente etapa -->
+      <section id="sobre-mi" class="section">
+        <div class="container">
+          <h2><span class="section-number">01.</span>Sobre mí</h2>
+          <p class="text-muted">Contenido en construcción.</p>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <h2><span class="section-number">02.</span>Skills</h2>
+          <p class="text-muted">Contenido en construcción.</p>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section">
+        <div class="container">
+          <h2><span class="section-number">03.</span>Proyectos destacados</h2>
+          <p class="text-muted">Contenido en construcción.</p>
+        </div>
+      </section>
+
+      <section id="design-system" class="section section-alt">
+        <div class="container">
+          <h2><span class="section-number">04.</span>Design System / Componentes</h2>
+          <p class="text-muted">Contenido en construcción.</p>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <div class="container">
+          <h2><span class="section-number">05.</span>Contacto</h2>
+          <p class="text-muted">Contenido en construcción.</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>&copy; <span id="year"></span> Carlos Calle. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

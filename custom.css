@@ -1,0 +1,53 @@
+:root {
+  --color-primary: #6fb8d9;
+  --color-primary-dark: #4a9bc2;
+  --color-secondary: #ffb4a2;
+  --color-secondary-dark: #f28c72;
+  --color-accent-mint: #a8e6cf;
+  --color-background: #f2fbfd;
+  --color-surface: #ffffff;
+  --color-surface-alt: #e3f4f9;
+  --color-text: #17313b;
+  --color-text-muted: #5c7d89;
+  --color-border: #cfe9f1;
+  --color-white: #ffffff;
+
+  --font-display: "Quicksand", system-ui, sans-serif;
+  --font-body: "Nunito Sans", system-ui, sans-serif;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+
+  --radius-sm: 0.9rem;
+  --radius-md: 1.3rem;
+  --radius-lg: 2rem;
+  --radius-full: 999px;
+  --shadow-soft: 0 10px 30px -14px rgb(74 155 194 / 0.35);
+  --shadow-card: 0 18px 40px -16px rgb(74 155 194 / 0.4);
+
+  --sidebar-collapsed: 76px;
+  --sidebar-expanded: 250px;
+  --content-max-width: clamp(760px, 90vw, 1440px);
+  --transition: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --color-primary: #7fc9e8;
+  --color-primary-dark: #5aaed4;
+  --color-secondary: #ffb4a2;
+  --color-secondary-dark: #ff9a80;
+  --color-accent-mint: #7fd8bb;
+  --color-background: #0c1d24;
+  --color-surface: #12262f;
+  --color-surface-alt: #16303a;
+  --color-text: #e7f5f9;
+  --color-text-muted: #8fb2bd;
+  --color-border: #1f3a44;
+  --color-white: #12262f;
+  --shadow-soft: 0 10px 30px -14px rgb(0 0 0 / 0.55);
+  --shadow-card: 0 18px 40px -16px rgb(0 0 0 / 0.7);
+}
